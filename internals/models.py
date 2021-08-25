@@ -665,7 +665,7 @@ class Feature(DictModel):
             'notes': d.pop('ff_views_notes', None),
           }
         },
-        'edge': {
+        'edge': {  # Deprecated
           'view': {
             'text': VENDOR_VIEWS[self.ie_views],
             'val': d.pop('ie_views', None),
@@ -733,6 +733,7 @@ class Feature(DictModel):
         d['meta']['milestone_str'] = d['impl_status_chrome']
       d['ff_views'] = {'value': self.ff_views,
                        'text': VENDOR_VIEWS[self.ff_views]}
+      # Deprecated
       d['ie_views'] = {'value': self.ie_views,
                        'text': VENDOR_VIEWS[self.ie_views]}
       d['safari_views'] = {'value': self.safari_views,
@@ -1215,17 +1216,18 @@ class Feature(DictModel):
   explainer_links = ndb.StringProperty(repeated=True)
 
   ff_views = ndb.IntegerProperty(required=True, default=NO_PUBLIC_SIGNALS)
+  # Deprecated
   ie_views = ndb.IntegerProperty(required=True, default=NO_PUBLIC_SIGNALS)
   safari_views = ndb.IntegerProperty(required=True, default=NO_PUBLIC_SIGNALS)
   web_dev_views = ndb.IntegerProperty(required=True)
 
   ff_views_link = ndb.StringProperty()
-  ie_views_link = ndb.StringProperty()
+  ie_views_link = ndb.StringProperty()  # Deprecated
   safari_views_link = ndb.StringProperty()
   web_dev_views_link = ndb.StringProperty()
 
   ff_views_notes = ndb.StringProperty()
-  ie_views_notes = ndb.StringProperty()
+  ie_views_notes = ndb.StringProperty() # Deprecated
   safari_views_notes = ndb.StringProperty()
   web_dev_views_notes = ndb.StringProperty()
 
