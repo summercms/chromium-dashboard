@@ -22,7 +22,7 @@ chardet==3.0.4
 idna==2.10
 pyasn1-modules==0.2.8
 cachetools==3.1.1
-rsa==4.5
+rsa==4.7
 
 # These are some libraries used indirectly below.  Pin them to versions that
 # work on python 2.7.
