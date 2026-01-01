@@ -51,7 +51,7 @@
     "gulp-load-plugins": "^1.6.0",
     "gulp-minify-html": "^1.0.6",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^6.0.1",
     "gulp-uglify-es": "^1.0.4",
     "gulp-util": "^3.0.7",
     "http2-push-manifest": "^1.0.0",
@@ -85,7 +85,7 @@
     "lit-element": "^2.1.0",
     "lit-html": "^1.1.2",
     "node-fetch": ">=2.6.1",
-    "node-sass": ">=4.13.1",
+    "node-sass": ">=9.0.0",
     "urijs": ">=1.19.7",
     "yargs-parser": ">=13.1.2"
   }
