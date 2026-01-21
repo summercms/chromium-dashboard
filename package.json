@@ -70,7 +70,7 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "sw-precache": "^5.2.1",
     "sw-toolbox": "^3.6.0",
-    "tar": ">=3.2.3",
+    "tar": ">=7.5.4",
     "trim-newlines": ">=3.0.1"
   },
   "dependencies": {
